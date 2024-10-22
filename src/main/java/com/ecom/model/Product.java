@@ -25,7 +25,7 @@ public class Product {
 	@Column(length = 500)
 	private String title;
 	
-	@Column(length = 500)
+	@Column(length = 10000)
 	private String description;
 	
 	private String category;
@@ -35,5 +35,13 @@ public class Product {
 	private int stock;
 	
 	private String image;
+	
+	private int discount;
+	
+	private Double discountPrice;
+
+	private Boolean isActive;
+	
+
 	
 }

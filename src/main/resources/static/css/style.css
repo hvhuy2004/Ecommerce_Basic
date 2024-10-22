@@ -7,3 +7,34 @@
 .cat-div {
 	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Phóng to khung sản phẩm khi hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Tạo bóng cho khung khi hover */
+}
+
+.btn-primary:hover {
+    background-color: rgb(0, 128, 255); /* Đổi sang màu đỏ sáng hơn khi hover */
+    border-color: rgb(0, 128, 255);     /* Đổi màu viền khi hover */
+    color: white;              /* Giữ màu chữ trắng */
+    transform: scale(1.05);    /* Phóng to nút nhẹ khi hover */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+a i.fa-cart-shopping:hover {
+    color: rgb(192, 192, 192) !important; /* Sử dụng !important để đảm bảo ghi đè màu mặc định */
+    transform: scale(1.2);     /* Phóng to biểu tượng khi hover */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+.product-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
