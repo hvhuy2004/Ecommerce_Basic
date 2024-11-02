@@ -47,7 +47,10 @@
 								<td>[[${u.email}]]</td>
 								<td>[[${u.mobileNumber}]]</td>
 								<td>[[${u.address+','+u.city+','+u.state+','+u.pincode}]]</td>
-								<td>[[${u.isEnable}]]</td>
+								<td><strong th:style="${u.isEnable} ? 'color: green;' : 'color: orange;'">
+								            [[${u.isEnable}]]
+								      </strong>
+								</td>
 								
 								<td><a th:href="@{'/admin/updateSts?status=true&id=' + ${u.id}}" class="btn btn-sm btn-primary">
 										
